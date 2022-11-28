@@ -8,6 +8,7 @@ describe("Test Login Component", () => { //これからテストするよ宣言(
 		expect(buttonList).toHaveLength(1); //expect=〜という結果を期待する
 	});
 	
+	
 	test("should be failed on email validation", () => {
 		const testEmail = "shincode.com";
 		expect(validateEmail(testEmail)).not.toBe(true); //shincode.comを入れた時にちゃんと間違えるかのテスト
